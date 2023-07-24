@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 10px;
+  background-color: #e2dcc8;
+  font-family: "Fragment Mono", monospace;
+}
+
+footer {
+  text-align: center;
+}
+hr {
+  border-bottom: 2px solid black;
+}
+.Heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.grid-item {
+  border-radius: 0px;
+  background-color: #3ded97;
+}
+.sudoku_grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  /* flex-direction: row; */
+  max-width: 578px;
+  /* width: 40%; */
+  flex-wrap: wrap;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sudoku_grid div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: black;
+  font-size: 40px;
+}
+.Buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+#GetPuzzle,
+#SolvePuzzle {
+  display: inline-block;
+  text-decoration: none;
+  color: #f7e2e2;
+  font-weight: bold;
+  background-color: #050708;
+  padding: 10px 35px;
+  font-size: 24px;
+  /* border: 1px solid #2d6898; */
+  border: none;
+  border-radius: 12px;
+  /* box-shadow: 4px 4px 0px 0px rgba(255, 67, 67, 0.3); */
+  margin-right: 10px;
+}
+.box1 {
+  background-color: #f5f2f2;
+  border: 2px solid white;
+}
+
+/* .box1:hover {
+  background-color: #48aaad;
+  color: black;
+} */
+
+.box2 {
+  background-color: #f5f2f2;
+  border: 2px solid white;
+}
+/* .box2:hover {
+  background-color: red;
+} */
+.box3 {
+  background-color: #028a0f;
+  border: 2px solid white;
+}
+/* .box3:hover {
+  background-color: #3ded97;
+  color: black;
+} */
+.subWrapper {
+  display: flex;
+
+  /* justify-content: space-between; */
+}
+.sidebar {
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  margin-top: 50px;
+  display: grid;
+  align-content: space-evenly;
+}
+#opCnt {
+  color: #0f3d3e;
+  font-size: 45px;
+}
+.contentRight {
+  width: auto;
+  margin: 0 auto;
+  order: -1;
+}
+#cnttext {
+  color: #282a3a;
+}
+
+#name {
+  color: #0f3d3e;
+  font-size: 30px;
+}
